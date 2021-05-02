@@ -18,7 +18,7 @@ body {
   background: var(--very-light-gray);
 }
 .container {
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: grid;
   grid-template-columns: repeat(3, 300px);
   justify-content: center;
@@ -38,7 +38,7 @@ body {
   border-radius: 30px;
   font-weight: 700;
   background: var(--very-light-gray);
-  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
   line-height: 1.2;
   text-decoration: none;
   padding: 1rem;
@@ -48,6 +48,11 @@ body {
   position: absolute;
   left: 2rem;
   bottom: 1rem;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--very-light-gray);
+  color: var(--very-light-gray) !important;
 }
 p {
   font-family: "Lexend Deca", sans-serif;
