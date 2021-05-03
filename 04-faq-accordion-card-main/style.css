@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --very-dark-blur: hsl(238, 29%, 16%);
+  --sodt-red: hsl(14, 88%, 65%);
+  --bg-violet: hsl(273, 75%, 66%);
+  --bg-blue: hsl(240, 73%, 65%);
+  --txt-very-d-blue: hsl(237, 12%, 33%);
+  --txt-dark-blue: hsl(240, 6%, 50%);
+  --divider-light-blue: hsl(240, 5%, 91%);
+}
+
+html {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+body {
+  background: linear-gradient(to right, var(--bg-violet), var(--bg-blue));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  background-color: var(--divider-light-blue);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.images {
+  background-image: url(./images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top 50px left -60px;
+  background-size: 359px;
+  height: 359px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+.images::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top -360px left -600px;
+  background-size: 945px;
+  height: 945px;
+  width: 100%;
+  z-index: 1;
+}
+.images::before {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 130px;
+  left: -210px;
+  background-image: url(./images/illustration-box-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 184px;
+  height: 184px;
+  width: 100%;
+}
+.faq {
+  width: 100%;
+  height: 100%;
+  padding: 15px 30px;
+}
+.faq h2 {
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 30px auto;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question {
+  padding: 20px 0;
+}
+.wraper {
+  width: 100%;
+  color: var(--txt-dark-blue);
+  border-bottom: 1px solid rgba(133, 133, 133, 0.301);
+  border-bottom-width: thin;
+}
+.answer {
+  display: none;
+}
+.answer.show {
+  display: block;
+}
+.bold {
+  font-size: 14;
+  color: var(--txt-very-d-blue);
+  font-weight: 700;
+}
+
+button {
+  border: 0;
+  margin: 0 32px;
+}
