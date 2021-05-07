@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Car Sales Site</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>
+          <h1>Available Cars</h1>
+        <p>There are 15 cars that match your criteria</p>
+        </div>
+       <div class="wraper">
+        <div class="search">
+          <input type="search" name="search">
+      </div>
+      <div class="tredots">
+          <div class="hide">
+          <div class="checkbox-f">
+          <label for="newcars"">News Cars</label>
+          <input type="checkbox" name="newcars" id="newcars"></div>
+          <div class="checkbox-f">
+            <label for="usedcars"">Used cars</label>
+          <input type="checkbox" name="usedcars" id="usedcars">
+          </div>
+            <div class="checkbox-f"><label for="dealership">Dealership</label>
+              <input type="checkbox" name="dealership" id="dealership"></div>
+          <div class="checkbox-f"><label for="owner<">For sale by owner</label>
+            <input type="checkbox" name="owner<" id="owner<"></div>
+          
+          </div>
+      </div>
+       </div>
+      </div>
+      <section>
+        <div class="labels">
+          <p class="lbl-details">Car Details</p>
+          <p class="lbl-location">Location</p>
+          <p class="lbl-price">Price</p>
+          <p class="lbl-action">Action</p>
+      </div>
+        <div class="cards">
+            <div class="card">
+              <div class="card__title">
+                  <h2>2017 Toyota Highlander V4</h2>
+              </div>
+              <div class="card__content">
+                <p>1944 Scrimba Ln
+                  Youngstown, OH 44481</p>
+              </div>
+              <div class="price">
+                <h3>$17,400</h3>
+                <i onclick="changeeart(this)" class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__title">
+                  <h2>2012 Toyota Tundra 4x4</h2>
+              </div>
+              <div class="card__content">
+                <p>301 Fantasy Dr
+                  Beverly Hills, CA 90210</p>
+              </div>
+              <div class="price">
+                <h3>$23,900</h3>
+                <i onclick="changeeart(this)" class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__title">
+                  <h2>2004 Dodge Ram 4x4</h2>
+              </div>
+              <div class="card__content">
+                <p>9104 Falsety Ave
+                  AnonyVille, FL 40440/p>
+              </div>
+              <div class="price">
+                <h3>$7,988</h3>
+                <i onclick="changeeart(this)" class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__title">
+                  <h2>2017 Toyota Highlander V4</h2>
+              </div>
+              <div class="card__content">
+                <p>1944 Scrimba Ln
+                  Youngstown, OH 44481</p>
+              </div>
+              <div class="price">
+                <h3>$17,400</h3>
+                <i onclick="changeeart(this)" class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__title">
+                  <h2>2012 Toyota Tundra 4x4</h2>
+              </div>
+              <div class="card__content">
+                <p>301 Fantasy Dr
+                  Beverly Hills, CA 90210</p>
+              </div>
+              <div class="price">
+                <h3>$23,900</h3>
+                <i onclick="changeeart(this)" class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__title">
+                  <h2>2004 Dodge Ram 4x4</h2>
+              </div>
+              <div class="card__content">
+                <p>9104 Falsety Ave
+                  AnonyVille, FL 40440/p>
+              </div>
+              <div class="price">
+                <h3>$7,988</h3>
+                <i onclick="changeeart(this)" class="far fa-heart"></i>
+              </div>
+            </div>
+
+        </div>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
