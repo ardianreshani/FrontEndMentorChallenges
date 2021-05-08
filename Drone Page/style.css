@@ -1,0 +1,365 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+}
+.menu-btn {
+  width: 2.5em;
+  cursor: pointer;
+}
+.top-bg-container {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 80% auto;
+  z-index: -1;
+}
+.light-streaks {
+  background: #b2dd9e url(./images/streaks.jpg);
+  background-blend-mode: screen;
+  background-size: cover;
+  height: 100vh;
+}
+.blue-col {
+  background-color: #7988be;
+}
+.container {
+  margin: 0 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: inline-block;
+  background-color: black;
+  padding: 0.2em 0.4em;
+  color: white;
+  font-size: 1.8rem;
+}
+.logo span {
+  color: #6889ff;
+}
+nav ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 66%;
+  background-color: #363b4e;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  padding: 2em 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+nav ul li a {
+  color: white;
+  display: block;
+  padding: 0.4em 1.5em;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.exit-btn {
+  text-align: right;
+}
+.exit-btn img {
+  width: 2em;
+  margin: 1.5em 2em;
+  cursor: pointer;
+}
+.content {
+  text-align: center;
+  margin: 8em 3em 0;
+  height: 75vh;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  line-height: 92%;
+}
+.type p {
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  line-height: 141.6%;
+}
+
+.drone-container {
+  position: relative;
+  margin: 5em auto;
+  width: 65%;
+}
+.blur,
+.drone {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.blur {
+  opacity: 0.5;
+  top: 1em;
+  animation: pulse 2s alternate-reverse infinite;
+}
+.drone {
+  animation: hover 2s alternate-reverse infinite;
+}
+
+@keyframes hover {
+  from {
+    transform: translateY(-30px);
+  }
+}
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+}
+.quote {
+  width: 90%;
+  background-color: #303853;
+  position: relative;
+  color: white;
+  padding: 4em 2em;
+  margin-left: auto;
+  height: 75vh;
+}
+.quote::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./images/stadium.jpg);
+  opacity: 17%;
+}
+blockquote {
+  margin: 0 0 2em 0;
+  font-size: 1.5rem;
+}
+cite {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+cite:before {
+  content: "";
+  position: absolute;
+  width: 1em;
+  border-bottom: 1px solid white;
+  left: 0;
+  top: 50%;
+}
+.gallery {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-bottom: 2em;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.footage-content p {
+  font-family: "Montserrat";
+}
+.gallery-container {
+  display: grid;
+  grid-template-areas:
+    ". a b"
+    "c d ."
+    ". e .";
+}
+.gallery-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+.gallery-container img:nth-of-type(1) {
+  grid-area: a;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.gallery-container img:nth-of-type(2) {
+  grid-area: b;
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.gallery-container img:nth-of-type(3) {
+  grid-area: c;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.gallery-container img:nth-of-type(4) {
+  grid-area: d;
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.gallery-container img:nth-of-type(5) {
+  grid-area: e;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* SECTION 3 */
+.contact {
+  background: #b2dd9e;
+}
+h3 {
+  padding: 1em 1em 1em 10%;
+  font-size: 2rem;
+  background-color: #9fc88c;
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+}
+.cols-2 {
+  width: 90%;
+  margin: 2em 2em 2em 10%;
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+button {
+  background-color: black;
+  border: none;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.8em;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.other-info {
+  margin-top: 3em;
+  width: 50%;
+}
+
+.other-info ul li {
+  padding: 0.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  border-radius: 0.2em;
+  font-family: "Montserrat";
+  font-size: 0.9rem;
+}
+
+.other-info a {
+  color: black;
+}
+
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 20px;
+  }
+  .top-bg-container {
+    width: 80%;
+    grid-template-columns: 60% auto;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  h1 {
+    font-size: 5rem;
+    width: 80%;
+  }
+  .type p {
+    width: 80%;
+  }
+  .menu-btn,
+  .exit-btn {
+    display: none;
+  }
+  nav ul {
+    transform: translateX(0);
+    width: unset;
+    height: unset;
+    background: none;
+    display: flex;
+    padding-bottom: 0;
+    position: unset;
+  }
+  nav ul li a {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .quote {
+    width: 80%;
+    display: grid;
+    place-items: center;
+  }
+  blockquote,
+  cite {
+    width: 50%;
+    justify-self: center;
+  }
+  blockquote {
+    font-size: 2rem;
+  }
+  .gallery {
+    display: flex;
+    gap: 4em;
+  }
+  .gallery-container {
+    margin-top: -5em;
+    z-index: 1;
+  }
+  h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 91.6%;
+  }
+  .cols-2 {
+    display: flex;
+    gap: 3em;
+  }
+  .form-container,
+  .other-info {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  .other-info {
+    margin-top: 2em;
+  }
+
+  input {
+    padding: 1.5em;
+  }
+}
