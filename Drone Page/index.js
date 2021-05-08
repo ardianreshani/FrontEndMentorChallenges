@@ -13,3 +13,8 @@ menuBtn.addEventListener("click", () => {
 link.addEventListener("click", () => {
   menu.style.transform = "translateX(100%)";
 });
+window.scroll({
+  top: 0,
+  left: 0,
+  behavior: "smooth",
+});
