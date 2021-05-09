@@ -182,3 +182,26 @@ body {
   color: white;
   font-weight: bold;
 }
+
+/* Section 2 */
+.the-future {
+  margin: 5rem auto;
+  text-align: center;
+  color: var(--primary-dark-blue);
+}
+
+.the-future h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.image img {
+  margin: 2rem auto;
+}
+.text {
+  width: 70%;
+  text-align: center;
+  margin: 1rem auto;
+}
+.wraper {
+  padding-bottom: 3rem;
+}
