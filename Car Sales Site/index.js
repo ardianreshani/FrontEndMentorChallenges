@@ -9,7 +9,6 @@ treDots.addEventListener("click", () => {
   } else {
     hide.style.clipPath = "circle(0% at 100% 0%)";
   }
-  console.log(panelStyles);
 });
 
 document.addEventListener("mouseup", (e) => {
