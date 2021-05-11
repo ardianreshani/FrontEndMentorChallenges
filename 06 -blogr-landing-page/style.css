@@ -290,3 +290,47 @@ footer {
 .connect h2 {
   padding-bottom: 1rem;
 }
+
+@media only screen and (min-width: 786px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header {
+    display: flex;
+    background-position: center center;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+    width: 100%;
+  }
+  .menu {
+    flex-direction: row;
+    align-items: center !important;
+    clip-path: circle(100% at 50% 50%) !important;
+    background: transparent;
+    position: unset;
+    box-shadow: unset;
+    height: unset;
+    margin: 0;
+    padding: 0;
+  }
+  .dropbtn {
+    color: white;
+  }
+  .menu-btns {
+    border-top: unset;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    width: unset;
+  }
+  .menu-btns a {
+    margin-left: 1rem;
+  }
+  .active,
+  .menu-btn {
+    display: none;
+  }
+}
