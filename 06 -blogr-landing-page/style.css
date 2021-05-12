@@ -301,10 +301,24 @@ footer {
   .header {
     display: flex;
     background-position: center center;
+    height: 80vh;
   }
   nav {
     display: flex;
     align-items: center;
+  }
+  .dropbtn {
+    display: flex;
+    align-items: center;
+  }
+  .dropbtn img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+  }
+  .dropdown-content {
+    background: white;
+    color: var(--very-grayish-blue);
   }
   .menu {
     flex-direction: row;
@@ -323,12 +337,10 @@ footer {
     border-top: unset;
     flex-direction: row;
     padding: 0;
-    margin-left: 35rem;
+    margin-left: 30rem;
     width: unset;
   }
-  .menu-btns a {
-    margin: 0;
-  }
+
   .btn:first-child {
     color: white;
     padding: 1rem;
@@ -336,7 +348,7 @@ footer {
   .btn-cta {
     background: white;
     color: var(--primary-light-red);
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
   }
   .hero h1 {
     font-size: 3.5rem;
@@ -381,7 +393,7 @@ footer {
   }
   .art {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     background-position: left center;
     background-size: 800px;
     padding: 0;
@@ -390,11 +402,17 @@ footer {
   }
   .art_mobile {
     position: unset;
+    width: 30%;
   }
   .state__art {
-    padding: 2rem 1rem;
-    width: 50%;
-    order: 2;
+    margin-left: 9rem;
+    flex-basis: 40%;
+  }
+  .state__art h2 {
+    font-size: 2rem;
+  }
+  .state__art p {
+    font-size: 1.3rem;
   }
 
   .laptop {
@@ -420,5 +438,9 @@ footer {
     align-items: flex-start;
     width: 100vw;
     padding: 2.5rem 0;
+  }
+  .show {
+    position: absolute;
+    top: 80px;
   }
 }
