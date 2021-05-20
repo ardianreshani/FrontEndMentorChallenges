@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --Dark-Cyan: hsl(192, 100%, 9%);
+  --Dark-Blue: hsl(207, 100%, 98%);
+  --Header-Font: "Poppins", sans-serif;
+  --Body-Font: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: var(--Body-Font);
+  color: var(--Dark-Cyan);
+}
+
+/* Header Style Mobile */
+header {
+  padding-bottom: 4rem;
+}
+nav {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 120px;
+}
+.try-it {
+  color: var(--Pink);
+  border: 2px solid var(--Pink);
+  border-radius: 20px;
+  padding: 0.3rem 0.9rem;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.hero {
+  text-align: center;
+  margin-top: 5rem;
+}
+.hero__title {
+  font-family: var(--Header-Font);
+  line-height: 1.2;
+}
+.hero__subtitle {
+  font-weight: 500;
+  line-height: 1.4;
+  padding-bottom: 2rem;
+}
+.get-started {
+  background: var(--Pink);
+  color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section 2 Screen Markup Mobile */
+
+.screen-mockups {
+  margin-top: 4rem;
+  text-align: center;
+}
+.screen-mockups img {
+  max-width: 100%;
+}
+.comunitet {
+  margin: 0;
+  padding-bottom: 5rem;
+}
+.comunitet img {
+  max-width: 40px;
+  margin-right: 95px;
+}
+.mockups-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+.mockups-subtitle {
+  font-weight: 400;
+  margin: 0;
+  color: hsla(192, 100%, 9%, 0.603);
+}
+.message-sent img {
+  max-width: 40px;
+  margin-right: 115px;
+}
