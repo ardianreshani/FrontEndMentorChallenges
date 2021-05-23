@@ -114,6 +114,7 @@ nav {
   width: 100%;
   height: 100%;
   background: url(./images/bg-section-top-mobile-1.svg) no-repeat;
+  background-size: 100%;
 }
 
 .grow-together::after {
@@ -124,6 +125,7 @@ nav {
   width: 100%;
   height: 100%;
   background: url(./images/bg-section-bottom-mobile-1.svg) no-repeat;
+  background-size: 100%;
 }
 .grow-text {
   padding-top: 3rem;
@@ -162,6 +164,7 @@ nav {
   width: 100%;
   height: 100%;
   background: url(./images/bg-section-top-mobile-2.svg) no-repeat;
+  background-size: 100%;
 }
 
 .your-users::after {
@@ -172,6 +175,7 @@ nav {
   width: 100%;
   height: 100%;
   background: url(./images/bg-section-bottom-mobile-2.svg) no-repeat;
+  background-size: 100%;
 }
 .users-text {
   line-height: 1.4;
@@ -184,20 +188,22 @@ nav {
 /* footer mobile */
 
 footer {
-  margin: 12rem auto;
+  margin: 12rem auto 0 auto;
   background: var(--Dark-Cyan);
   color: white;
   position: relative;
   padding-top: 2rem;
+  overflow: hidden;
 }
 footer::before {
   content: "";
   position: absolute;
-  top: -8%;
+  top: -10%;
   left: 0;
   width: 100%;
   height: 100%;
   background: url(./images/bg-footer-top-mobile.svg) no-repeat;
+  background-size: 100%;
 }
 .newsletter {
   text-align: left;
@@ -207,11 +213,39 @@ footer::before {
   width: 100%;
   padding: 7px;
 }
-.lorem {
-  text-align: left !important;
-  padding: 2rem;
+.form button {
+  margin-top: 1rem;
+  margin-left: 73%;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  background-color: var(--Pink);
+  color: white;
 }
-
+.lorem {
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
+.lorem svg {
+  width: 100%;
+  height: 50px;
+}
+#ipsum {
+  width: 95%;
+  color: white;
+}
+.info {
+  padding-left: 2rem;
+}
 .info img {
-  width: 26px;
+  width: 5%;
+  height: 5%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.phone,
+.email {
+  display: flex;
+  align-items: center;
 }
