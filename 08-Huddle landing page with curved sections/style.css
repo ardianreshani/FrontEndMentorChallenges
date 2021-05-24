@@ -159,7 +159,7 @@ nav {
 .your-users::before {
   content: "";
   position: absolute;
-  top: -16%;
+  top: -14%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -193,17 +193,17 @@ footer {
   color: white;
   position: relative;
   padding-top: 2rem;
-  overflow: hidden;
 }
 footer::before {
   content: "";
   position: absolute;
-  top: -10%;
+  top: -7%;
   left: 0;
   width: 100%;
   height: 100%;
   background: url(./images/bg-footer-top-mobile.svg) no-repeat;
   background-size: 100%;
+  z-index: 2;
 }
 .newsletter {
   text-align: left;
@@ -212,6 +212,7 @@ footer::before {
 .newsletter input {
   width: 100%;
   padding: 7px;
+  border-radius: 7px;
 }
 .form button {
   margin-top: 1rem;
@@ -233,6 +234,7 @@ footer::before {
 }
 #ipsum {
   width: 95%;
+  text-align: left !important;
   color: white;
 }
 .info {
@@ -248,4 +250,138 @@ footer::before {
 .email {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 786px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+  .logo {
+    width: 240px;
+  }
+  .hero {
+    padding-top: 5rem;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__subtitle {
+    text-align: center;
+    width: 35%;
+    margin-right: 3;
+    margin: 1rem auto;
+  }
+  .screen-mockups img {
+    width: 60%;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+  }
+  .grow-together {
+    margin: 10rem auto;
+    text-align: left;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .image-grow {
+    order: 1;
+  }
+  .image-grow img {
+    width: 70%;
+  }
+  .grow-text {
+    padding: 0 5rem;
+    order: 0;
+  }
+  .grow-text p {
+    width: 50%;
+  }
+
+  .grow-together::before {
+    top: -40%;
+    background: url(./images/bg-section-top-desktop-1.svg) no-repeat;
+    background-size: 100%;
+  }
+  .flowing {
+    margin: 10rem auto;
+  }
+
+  .image-flowing img {
+    width: 50%;
+  }
+  .flowing-text {
+    flex: 1;
+    padding-right: 3rem;
+    text-align: left;
+    width: 35%;
+  }
+  .your-users {
+    padding: 0;
+  }
+  .your-users::before {
+    top: -25%;
+    background: url(./images/bg-section-top-desktop-2.svg) no-repeat;
+    background-size: 100%;
+  }
+  .your-users::after {
+    background: url(./images/bg-section-bottom-desktop-2.svg) no-repeat;
+    background-size: 100%;
+  }
+  .image-users {
+    order: 1;
+  }
+  .users-text {
+    flex: 1;
+    padding-left: 3rem;
+    text-align: left;
+    width: 35%;
+  }
+  .image-users img {
+    width: 50%;
+    padding: 1rem;
+  }
+  .ready {
+    margin: 10rem auto;
+  }
+  .ready h2 {
+    font-size: 3rem;
+  }
+  .get-started {
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+  }
+  footer {
+    margin-top: 20rem;
+  }
+
+  footer::before {
+    top: -37%;
+    background: url(./images/bg-footer-top-desktop.svg) no-repeat;
+    background-size: 100%;
+  }
+  .newsletter {
+    padding-left: 20rem;
+    order: 1;
+  }
+  .newsletter input {
+    width: 30%;
+    margin-right: 1rem;
+  }
+  .form {
+  }
+  .form button {
+    margin: 0;
+  }
+  .newsletter p {
+    width: 50%;
+  }
+  .contact {
+    padding-left: 20rem;
+    order: 0;
+  }
 }
