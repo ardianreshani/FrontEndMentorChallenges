@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 $Dark-Blue-intro: hsl(217, 28%, 15%);
@@ -14,5 +16,249 @@ html {
   font-size: 14px;
 }
 body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+  background-color: $Dark-Blue-mainBg;
+}
+a,
+li {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
   font-family: "Raleway", sans-serif;
+}
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+}
+$list: $Cyan, $Blue;
+.get-started {
+  @include gradient(left, $list);
+  padding: 12px 62px;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 0.8;
+}
+header {
+  background-color: $Dark-Blue-intro;
+  margin-bottom: 10rem;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    img {
+      width: 100px;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      padding-left: 1rem;
+      color: rgba($color: #fff, $alpha: 0.8);
+    }
+  }
+  .hero {
+    img {
+      width: 80%;
+    }
+    .hero--text {
+      margin-top: 12rem;
+      position: relative;
+      background-color: $Dark-Blue-mainBg;
+      ::before {
+        content: "";
+        position: absolute;
+        top: -140px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: url(./images/bg-curvy-mobile.svg) no-repeat;
+        background-size: 100%;
+      }
+
+      h3 {
+        font-size: 1rem;
+        padding: 2rem;
+        color: rgba($color: #fff, $alpha: 0.8);
+        line-height: 1.5;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+.cart {
+  img {
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    margin: 0.7rem;
+  }
+  h4 {
+    padding: 0.5rem 4rem 8rem 4rem;
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+}
+
+.team-image {
+  img {
+    width: 70%;
+  }
+}
+.team-text {
+  padding-top: 5rem;
+  padding-left: 3rem;
+  text-align: left;
+  h1 {
+    padding: 1rem 0;
+  }
+  h4 {
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: rgba($color: #fff, $alpha: 0.8);
+    line-height: 1.5;
+    font-weight: lighter;
+  }
+  .fylo-works {
+    color: $Cyan;
+    font-size: 1.5rem;
+    border-bottom: 2px solid $Cyan;
+    position: relative;
+    &:hover {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      svg {
+        use:hover {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+#testimonial {
+  margin: 10rem auto;
+  padding-left: 2rem;
+}
+
+.profile {
+  background-color: $Dark-Blue-testimonials;
+  border-radius: 10px;
+  position: relative;
+  padding: 2rem;
+  text-align: left;
+  line-height: 1.7;
+  color: rgba($color: #fff, $alpha: 0.8);
+  width: 95%;
+  margin-bottom: 1.5rem;
+  h3 {
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+  .profile-info {
+    display: flex;
+    padding-top: 1.5rem;
+    img {
+      width: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .info {
+    padding: 0 1rem;
+    h5 {
+      padding-top: 0.3rem;
+      font-weight: lighter;
+      color: rgba($color: #fff, $alpha: 0.8);
+    }
+  }
+}
+.profile:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 15px;
+  width: 80%;
+  height: 100%;
+  background: url(./images/bg-quotes.png) no-repeat;
+}
+
+#sign-in {
+  background: $Dark-Blue-intro;
+  padding: 2rem;
+  width: 95%;
+  margin-left: 0.7rem;
+  border-radius: 10px;
+  h2 {
+    padding-bottom: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    color: rgba($color: #fff, $alpha: 0.8);
+    line-height: 1.5;
+    font-weight: lighter;
+  }
+  .for-free {
+    display: flex;
+    flex-direction: column;
+    input {
+      padding: 12px;
+      border: 0;
+      margin-bottom: 1rem;
+      border-radius: 20px;
+      &:focus,
+      :active {
+        border: 0;
+        outline: 0;
+      }
+    }
+  }
+}
+footer {
+  background-color: $Dark-Blue-Footer;
+  margin-top: 1rem;
+  text-align: left;
+  padding: 2rem;
+  .logo-footer {
+    img {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 1rem;
+    h4 {
+      font-weight: lighter;
+      line-height: 1.5;
+    }
+    img {
+      width: 18px;
+      height: 18px;
+      margin-right: 0.8rem;
+    }
+  }
+  ul {
+    padding: 1.5rem 0;
+  }
+  li {
+    padding-bottom: 0.8rem;
+  }
+  .social-media {
+    text-align: center;
+    i {
+      margin: 1rem;
+      padding: 12px;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+  }
 }
