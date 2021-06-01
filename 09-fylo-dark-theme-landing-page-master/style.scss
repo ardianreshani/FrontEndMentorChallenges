@@ -267,5 +267,103 @@ footer {
   }
 }
 
-// desktop style ->
+@media screen and (min-width: 800px) {
+  .logo {
+    img {
+      width: 150px;
+      margin-left: 5rem;
+    }
+  }
+  .menu {
+    margin-right: 5rem;
+    flex: 1;
+    a {
+      font-size: 1.3rem;
+      padding-left: 5rem;
+    }
+  }
+  header {
+    .hero {
+      img {
+        width: 40%;
+        object-fit: cover;
+      }
+      .hero--text {
+        margin-top: 5rem;
+        ::before {
+          top: -100px;
+          height: 30%;
+          background: url(./images/bg-curvy-desktop.svg) no-repeat;
+        }
+      }
+    }
+  }
+  #features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cart {
+    h4 {
+      padding: 0.5rem 12rem 8rem 12rem;
+    }
+  }
+  #team {
+    display: flex;
+    align-items: center;
+    margin: 0 4rem;
 
+    .team-text {
+      flex: 1;
+      h1 {
+        font-size: 2.5rem;
+      }
+      h4 {
+        font-size: 1.225rem;
+      }
+    }
+  }
+  #testimonial {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    flex-wrap: wrap;
+    .profile {
+      flex: 1;
+
+      width: 70%;
+      margin-left: 2rem;
+      .comment {
+        width: 80%;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    .logo-footer {
+      width: 30%;
+    }
+    .location-txt {
+      width: 40%;
+    }
+  }
+  #sign-in {
+    width: 60%;
+    margin: 4rem auto;
+    padding: 3rem;
+    .for-free {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        width: 65%;
+        margin: 0;
+      }
+    }
+  }
+}
