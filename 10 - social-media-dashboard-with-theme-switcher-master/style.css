@@ -13,17 +13,18 @@
 
   --toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
   --toggle-light: hsl(230, 22%, 74%);
-
-  --dark-bg: hsl(230, 17%, 14%);
-  --dark-top-bg: hsl(232, 19%, 15%);
-  --dark-card-bg: hsl(228, 28%, 20%);
-  --dark-blue-txt: hsl(228, 34%, 66%);
-  --white: hsl(0, 0%, 100%);
+  --txt: var(--light-dark-blue);
+  --bg: var(--light-top-bg);
+  --card-bg-color: var(--light-card-bg);
 
   --light-top-bg: hsl(225, 100%, 98%);
   --light-card-bg: hsl(227, 47%, 96%);
   --light-dark-txt: hsl(228, 12%, 44%);
   --light-dark-blue: hsl(230, 17%, 14%);
+  --dark-bg: hsl(230, 17%, 14%);
+  --dark-card-bg: hsl(228, 28%, 20%);
+  --dark-blue-txt: hsl(228, 34%, 66%);
+  --white: hsl(0, 0%, 100%);
 }
 
 html,
@@ -31,9 +32,10 @@ body {
   font-size: 14px;
   font-family: "Inter", sans-serif;
   margin: 1rem;
-  color: white;
-  background: var(--dark-top-bg);
+  color: var(--txt);
+  background: var(--bg);
 }
+
 .arrow-green,
 .arrow-reed {
   display: flex;
@@ -60,8 +62,34 @@ nav {
   flex-direction: column;
   justify-content: space-between;
 }
+/* .label {
+  display: flex;
+  border-radius: 9999px;
+  height: 32px;
+  width: 64px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  /* ON status */
+/* background: linear-gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
+  border: 1px solid #357edd;
+  justify-content: flex-end;
+} */
+*/
+
+/* .label__input {
+  display: none;
+} */
+
+/* .label__circle {
+  border-radius: 9999px;
+  width: 32px;
+
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+} */
 .media-profile {
-  background: var(--dark-card-bg);
+  background: var(--card-bg-color);
   text-align: center;
   margin: 2rem auto;
   padding: 1rem;
@@ -102,7 +130,7 @@ nav {
 .overview-cart {
   padding: 1rem;
   margin: 2em auto;
-  background: var(--dark-card-bg);
+  background: var(--card-bg-color);
   border-radius: 7px;
 }
 .cart-social {
@@ -111,7 +139,7 @@ nav {
   justify-content: space-between;
 }
 .cart-social h3 {
-  color: var(--dark-blue-txt);
+  color: var(--light-dark-txt);
 }
 .cart-info {
   display: flex;
@@ -145,4 +173,9 @@ nav {
   .arrow-reed h6 {
     font-size: 1rem;
   }
+}
+.darkmode {
+  --bg: var(--dark-bg);
+  --txt: var(--white);
+  --card-bg-color: var(--dark-card-bg);
 }
