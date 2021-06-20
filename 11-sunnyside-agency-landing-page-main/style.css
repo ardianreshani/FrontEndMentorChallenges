@@ -28,7 +28,7 @@ body {
   font-family: var(--font-Fraunces);
 }
 h1 {
-  font-size: clamp(2rem, 10vw, 2rem);
+  font-size: clamp(2rem, 10vw, 4rem);
   padding-top: 2.5rem;
   line-height: 1.2;
   letter-spacing: 0.3ch;
@@ -272,4 +272,125 @@ footer {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+@media screen and (min-width: 786px) {
+  nav {
+    justify-content: space-between;
+  }
+  .menu {
+    display: block;
+  }
+  .nav-ul {
+    display: flex;
+  }
+  .nav-ul a {
+    color: #fff;
+  }
+  a.cta-btn {
+    background-color: #fff;
+    color: var(--very-dark-blue);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .menu-btn {
+    display: none;
+  }
+  section {
+    flex-direction: row;
+  }
+  header {
+    background: url(./images/desktop/image-header.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+  }
+  #first-section {
+    background: url(./images/desktop/image-transform.jpg) no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 70vh;
+    order: 0;
+  }
+  .text {
+    order: 1;
+  }
+  #secound-section {
+    background: url(./images/desktop/image-stand-out.jpg) no-repeat center/cover;
+    width: 50%;
+    height: 70vh;
+    order: 1;
+  }
+  .two-img {
+    display: flex;
+  }
+  #graphic-design {
+    background: url(./images/desktop/image-graphic-design.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+  }
+  .graphic-text {
+    position: absolute;
+    top: 20rem;
+  }
+  .graphic-text p,
+  .photography-text p {
+    padding: 0 10rem;
+  }
+  #photography {
+    background: url(./images/desktop/image-photography.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+  }
+  .photography-text {
+    position: absolute;
+    flex: 1;
+    top: 20rem;
+  }
+  #image1 {
+    background: url(./images/desktop/image-gallery-milkbottles.jpg) no-repeat
+      center/cover;
+    width: 100%;
+    height: 50vh;
+  }
+  #image2 {
+    background: url(./images/desktop/image-gallery-orange.jpg) no-repeat
+      center/cover;
+    width: 100%;
+    height: 50vh;
+  }
+  #image3 {
+    background: url(./images/desktop/image-gallery-cone.jpg) no-repeat
+      center/cover;
+    width: 100%;
+    height: 50vh;
+  }
+  #image4 {
+    background: url(./images/desktop/image-gallery-sugarcubes.jpg) no-repeat
+      center/cover;
+    width: 100%;
+    height: 50vh;
+  }
+  .testimonials {
+    margin: 4rem auto;
+  }
+  .testimonials h3 {
+    padding-bottom: 2rem;
+  }
+  .card .name h3 {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+  .client-testimonials {
+    display: flex;
+  }
+  .gallery {
+    display: flex;
+  }
 }
