@@ -29,6 +29,7 @@ body {
 }
 h1 {
   font-size: clamp(2rem, 10vw, 2rem);
+  padding-top: 2.5rem;
   line-height: 1.2;
   letter-spacing: 0.3ch;
   font-weight: 900;
@@ -42,12 +43,7 @@ li {
 a {
   color: var(--very-dark-grayish-blue);
 }
-ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
+
 p,
 li > a {
   font-family: var(--font-barlow);
@@ -55,6 +51,40 @@ li > a {
 nav {
   display: flex;
   align-items: center;
+}
+.logo {
+  margin: 1rem;
+  display: flex;
+
+  align-items: center;
+}
+.menu-btn {
+  cursor: pointer;
+  margin-left: 180px;
+}
+.menu {
+  display: none;
+}
+.menu.active {
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+  background-color: #fff;
+  width: 90%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu li {
+  padding: 1rem;
+}
+.cta-btn {
+  background-color: var(--yello);
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-family: var(--font-Fraunces);
+  font-weight: 900;
 }
 header {
   color: #fff;
@@ -225,7 +255,15 @@ footer {
 .footer-logo {
   padding-top: 2rem;
 }
-
+.footer-nav ul {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.footer-nav ul li {
+  padding: 0 1rem;
+}
 .footer-nav a {
   color: hsl(167, 40%, 24%);
 }
