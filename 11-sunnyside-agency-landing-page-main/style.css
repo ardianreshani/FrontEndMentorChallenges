@@ -21,3 +21,163 @@ html {
   padding: 0;
   font-size: 18px;
 }
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-Fraunces);
+}
+h1 {
+  font-size: clamp(2rem, 10vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: 0.3ch;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+ul {
+  display: none;
+}
+p,
+li > a {
+  font-family: var(--font-barlow);
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+header {
+  color: #fff;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+.text {
+  order: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  color: var(--very-dark-blue);
+}
+.text h2 {
+  font-size: 1.8rem;
+  width: 80%;
+}
+.text p {
+  width: 80%;
+  line-height: 1.4;
+}
+.learn-btn {
+  color: var(--very-dark-blue);
+  text-align: left;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+.learn-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-bottom: 7px solid var(--yello);
+  border-radius: 5%;
+}
+p {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 675px) {
+  header {
+    background: url(./images/mobile/image-header.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+  }
+  #first-section {
+    background: url(./images/mobile/image-transform.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+    order: 0;
+  }
+  #secound-section {
+    background: url(./images/mobile/image-stand-out.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+    order: 0;
+  }
+  #graphic-design {
+    background: url(./images/mobile/image-graphic-design.jpg) no-repeat
+      center/cover;
+    width: 100%;
+    height: 100vh;
+  }
+  #photography {
+    background: url(./images/mobile/image-photography.jpg) no-repeat
+      center/cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+#graphic-design {
+  position: relative;
+}
+.graphic-text {
+  position: absolute;
+  top: 60%;
+  color: var(--dark-cyan);
+}
+
+#photography {
+  position: relative;
+}
+.photography-text {
+  position: absolute;
+  top: 65%;
+  color: var(--dark-blue);
+}
+.photography-text p {
+  padding: 1rem;
+}
+.testimonials h3 {
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+}
+.card img {
+  border-radius: 50%;
+  width: 75px;
+  letter-spacing: 0.5ch;
+}
+.card p {
+  width: 80%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.name h3 {
+  color: var(--very-dark-blue);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.5rem;
+}
+.name h5 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+  font-family: var(--font-barlow);
+  color: var(--grayish-blue);
+}
